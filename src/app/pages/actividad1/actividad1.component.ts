@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./actividad1.component.css']
 })
 export class Actividad1Component {
+ 
 }

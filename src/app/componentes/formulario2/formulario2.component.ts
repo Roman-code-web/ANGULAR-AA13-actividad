@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulario2.component.css']
 })
 export class Formulario2Component {
+  titulo="Actividad 2";
+  subtitulo="Pipe Currency";
   moneda!:number;
   tipoMoneda="";
 }

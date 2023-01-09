@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class Formulario1Component {
 palabra!:string;
+titulo="Actividad 1";
+subtitulo="Pipe Uppercase";
 }

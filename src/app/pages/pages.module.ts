@@ -6,6 +6,7 @@ import { Actividad2Component } from './actividad2/actividad2.component';
 import { Actividad3Component } from './actividad3/actividad3.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentesModule } from '../componentes/componentes.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -18,6 +19,7 @@ import { ComponentesModule } from '../componentes/componentes.module';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     ComponentesModule
   ]
 })

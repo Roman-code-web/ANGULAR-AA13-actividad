@@ -1,11 +1,12 @@
 <div class="container my-5">
     <div class="container d-flex flex-column justify-content-center">
-        <h2 class="fs-1 fw-bold text-center">Actividad 2</h2>
+        <h2 class="fs-1 fw-bold text-center">{{titulo |uppercase}}</h2>
+        <h3 class="fs-3 fw-bold text-center">{{subtitulo}}</h3>
         <div class="row d-flex justify-content-center my-5">
             <div class="col-md-6 col-sm-12 col-xs-12 border border-primary p-5">
                 <form class="" >
                     <div class="mb-3">
-                      <label for="palabra" class="form-label">Valor</label>
+                      <label for="palabra" class="form-label">Monto de Dinero</label>
                       <input type="number" class="form-control" id="moneda" name="moneda" [(ngModel)]="moneda" >
                     </div>
                     <div class="mb-3">
@@ -17,9 +18,9 @@
                           </select>
                     </div>
                     <div class="container w-100" [ngSwitch]="tipoMoneda">
-                        <div *ngSwitchCase="'EUR'" [ngClass]="'bg-success bg-opacity-50 py-2 text-dark fs-5'" ><p class="text-center fw-bold">Resultado:</p> <p class="text-center">{{moneda | currency:tipoMoneda }} </p></div>
-                        <div *ngSwitchCase="'USD'" [ngClass]="'bg-primary bg-opacity-50 py-2 text-dark fs-5'"><p class="text-center fw-bold">Resultado:</p> <p class="text-center"> {{moneda | currency:tipoMoneda }} </p></div>
-                        <div *ngSwitchCase="'PEN'" [ngClass]="'bg-info  bg-opacity-50 py-2 text-dark fs-5'"><p class="text-center fw-bold">Resultado:</p> <p class="text-center">  {{moneda | currency:tipoMoneda }} </p></div>
+                        <div *ngSwitchCase="'EUR'" [ngClass]="'alert alert-success py-2 text-dark fs-5'" ><p class="text-center fw-bold">Resultado:</p> <p class="text-center">{{moneda | currency:tipoMoneda }} </p></div>
+                        <div *ngSwitchCase="'USD'" [ngClass]="'alert alert-primary py-2 text-dark fs-5'"><p class="text-center fw-bold">Resultado:</p> <p class="text-center"> {{moneda | currency:tipoMoneda }} </p></div>
+                        <div *ngSwitchCase="'PEN'" [ngClass]="'alert alert-warning  bg-opacity-50 py-2 text-dark fs-5'"><p class="text-center fw-bold">Resultado:</p> <p class="text-center">  {{moneda | currency:'S/. ' }} </p></div>
                     </div>
                 </form>
             </div>
