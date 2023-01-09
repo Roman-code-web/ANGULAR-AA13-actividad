@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { Actividad1Component } from './actividad1/actividad1.component';
 import { Actividad2Component } from './actividad2/actividad2.component';
 import { Actividad3Component } from './actividad3/actividad3.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,6 +16,7 @@ import { Actividad3Component } from './actividad3/actividad3.component';
     Actividad3Component
   ],
   imports: [
+    RouterModule,
     CommonModule
   ]
 })
