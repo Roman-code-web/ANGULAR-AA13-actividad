@@ -4,7 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { Actividad1Component } from './actividad1/actividad1.component';
 import { Actividad2Component } from './actividad2/actividad2.component';
 import { Actividad3Component } from './actividad3/actividad3.component';
-import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { ComponentesModule } from '../componentes/componentes.module';
 
 
 
@@ -16,8 +17,8 @@ import { RouterModule } from '@angular/router';
     Actividad3Component
   ],
   imports: [
-    RouterModule,
-    CommonModule
+    CommonModule,
+    ComponentesModule
   ]
 })
 export class PagesModule { }
